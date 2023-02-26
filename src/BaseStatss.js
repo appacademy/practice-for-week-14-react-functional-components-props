@@ -1,6 +1,6 @@
 import "./BaseStats.css";
 
-function BaseStats({ stats, clicker }) {
+function BaseStats({ stats: {hp, attack, defense, speed}, clicker }) {
   return (
     <div className="base-stats">
       <h1>BaseStats</h1>
@@ -11,19 +11,19 @@ function BaseStats({ stats, clicker }) {
         <tbody>
           <tr>
             <td>Hitpoints</td>
-            <td>{stats.hp}</td>
+            <td>{hp}</td>
           </tr>
           <tr>
             <td>Attack</td>
-            <td>{stats.attack}</td>
+            <td>{attack}</td>
           </tr>
           <tr>
             <td>Defense</td>
-            <td>{stats.defense}</td>
+            <td>{defense}</td>
           </tr>
           <tr>
             <td>Speed</td>
-            <td>{stats.speed}</td>
+            <td>{speed}</td>
           </tr>
         </tbody>
       </table>
